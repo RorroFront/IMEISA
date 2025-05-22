@@ -1,0 +1,9 @@
+.scroll-background {
+  background-image: url('/assets/background.png');
+  background-repeat: repeat-y;
+  background-position: top center;
+  background-attachment: fixed; /* <- esto hace el "efecto parallax" suave */
+  background-size: cover; /* o 'auto' si quieres que se repita mejor */
+  /* min-height: 100vh; */
+height: 100dvh;
+}

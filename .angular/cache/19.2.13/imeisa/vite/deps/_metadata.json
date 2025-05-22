@@ -1,0 +1,52 @@
+{
+  "hash": "90df1dca",
+  "configHash": "08e26674",
+  "lockfileHash": "41b0f379",
+  "browserHash": "70627d43",
+  "optimized": {
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "66c45567",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "59ba8a01",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "a52611b0",
+      "needsInterop": false
+    },
+    "primeng/config": {
+      "src": "../../../../../../node_modules/primeng/fesm2022/primeng-config.mjs",
+      "file": "primeng_config.js",
+      "fileHash": "5d4b1dfb",
+      "needsInterop": false
+    },
+    "@primeng/themes/aura": {
+      "src": "../../../../../../node_modules/@primeng/themes/aura/index.mjs",
+      "file": "@primeng_themes_aura.js",
+      "fileHash": "a60443c0",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-U3WXM67G": {
+      "file": "chunk-U3WXM67G.js"
+    },
+    "chunk-XFJQ2FHO": {
+      "file": "chunk-XFJQ2FHO.js"
+    },
+    "chunk-IMAZOHYS": {
+      "file": "chunk-IMAZOHYS.js"
+    },
+    "chunk-WDMUDEB6": {
+      "file": "chunk-WDMUDEB6.js"
+    }
+  }
+}
