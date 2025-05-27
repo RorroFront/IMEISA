@@ -1,12 +1,22 @@
 <div class="scroll-background">
-  <div class="contenido">
-   <div class="hero" >
-    <p>CALIDAD E INNOVACIÓN EN MAQUINARIA INDUSTRIAL</p>
-   </div>
+  <div class="overlay"></div>
+
+  <div class="cont relative z-10">
+    <div class="hero text-[42px] px-8 w-full flex justify-center items-center">
+      <p class="text-center">CALIDAD E INNOVACIÓN EN MAQUINARIA INDUSTRIAL</p>
+    </div>
+
     <section>
       <app-ourservices></app-ourservices>
     </section>
+    <section>
+      <app-us></app-us>
+    </section>
+    <section>
+      <app-clients></app-clients>
+    </section>
+
   </div>
 </div>
-<router-outlet></router-outlet>
 
+<router-outlet></router-outlet>
