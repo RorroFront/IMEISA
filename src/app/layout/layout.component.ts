@@ -3,6 +3,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 import { OurservicesComponent } from "./ourservices/ourservices.component";
 import { UsComponent } from "./us/us.component";
 import { ClientsComponent } from "./clients/clients.component";
+import { ContactComponent } from "./contact/contact.component";
 
 @Component({
   selector: 'app-layout',
@@ -11,7 +12,8 @@ import { ClientsComponent } from "./clients/clients.component";
     RouterOutlet,
     OurservicesComponent,
     UsComponent,
-    ClientsComponent
+    ClientsComponent,
+    ContactComponent
 ],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.css'

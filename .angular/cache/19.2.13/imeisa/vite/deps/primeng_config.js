@@ -1,7 +1,7 @@
 import {
   CommonModule,
   DOCUMENT
-} from "./chunk-XFJQ2FHO.js";
+} from "./chunk-23GALI6V.js";
 import {
   Component,
   Directive,

@@ -2,7 +2,7 @@ import { createRequire } from 'module';const require = createRequire(import.meta
 import {
   CommonModule,
   DOCUMENT
-} from "./chunk-7NTY7Q5C.js";
+} from "./chunk-C3HG7CUI.js";
 import {
   Component,
   Directive,
