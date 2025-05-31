@@ -1,22 +1,62 @@
 <div class="wrapper  bg-[#b8c0cc] ">
 
-
     <div class="flex flex-row w-full justify-center ">
-        <div class=" font-semibold bg-[#b8c0cc] flex flex-col space-y-6 basis-4/5 text-center mt-8  mb-4 py-1">
+        <div class=" font-semibold bg-[#b8c0cc] flex flex-col space-y-6 basis-4/5 sm:basis-3/6 lg:basis-3/7 text-center mt-8  mb-0 py-1">
             <h2 class="text-4xl text-[#000000] ">Contacto</h2>
-            <div class="font-light text-[#000000] flex flex-col basis-4/5  ">
+
+            <!-- Text container for the contact information -->
+            <div class="font-light text-[#000000] flex flex-col basis-4/5 sm:basis-3/6 lg:basis-3/7 ">
                 <p class="text-justify ">En <span class="font-semibold">Imeisa</span> nos enfocamos en la calidad y en
                     ofrecer la mejor experiencia a
                     nuestros clientes.
                     Para brindarle un servicio eficiente, ponemos a su disposición nuestros canales de contacto.</p>
             </div>
-            <div class="flex basis-4/5 justify-sart text-[#000000] font-light " >
+
+            <!-- Contact information container -->
+            <div class="flex basis-4/5 sm:basis-3/6 lg:basis-3/7 text-sart text-[#000000] font-light ">
                 <div class="grid grid-cols-1 gap-y-3 ">
-                    <p>tel.+52 222 337 57 35</p>
+                    <p class="text-start">{{phone}}</p>
                     <p>{{email}}</p>
                 </div>
             </div>
 
+
+
+            <form class="text-start text-black grid grid-cols-1 gap-y-8 mt-4" 
+            [formGroup]="contactForm" (ngSubmit)="onSubmit()" action="">
+                <div>
+                    <label class="font-normal" for="name">Nombre*</label>
+                    <div class="pl-1">
+                        <input class="bg-[#ffffff] text-[#b0b0b0] px-5 py-2 w-full rounded-lg mt-2 font-light "
+                            id="name" formControlName="name" type="text" placeholder="Tu nombre">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="font-normal" for="email">Correo*</label>
+                    <div class="pl-1">
+                        <input class="bg-[#ffffff] text-[#b0b0b0] font-light px-5 py-2 w-full rounded-lg mt-2 "
+                            id="email" formControlName="email" type="text" placeholder="Tu email">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="message" class="font-normal ">Mensaje*</label>
+                    <div class="pl-1">
+                        <textarea id="message" formControlName="message" type="text" placeholder="Tu mensaje"
+                            class="bg-[#ffffff] text-[#b0b0b0] font-light px-4 pt-3 pb-2 w-full min-h-[150px] mt-2 rounded-lg ">
+                        </textarea>
+                    </div>
+                </div>
+
+                <div class=" flex w-full justify-center mb-[3rem]" >
+                    <button class="bg-[#0e89db] hover:bg-[#56ace6] cursor-pointer focus:outline-2
+                    focus:outline-offset-2 focus:outline-[#56ace6] active:bg-[#0e89db] p-3 rounded-xl text-[#ffffff] basis-2/4 " [disabled]="contactForm.invalid" 
+                    type="submit" >Enviar</button>
+                </div>
+
+                
+            </form>
         </div>
     </div>
 

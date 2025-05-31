@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class OurservicesComponent {
 
+  viewPdf(){
+    console.log('abrir pdf')
+    window.open('/assets/PDF/2025_IMEISA.pdf');
+  }
+
 }

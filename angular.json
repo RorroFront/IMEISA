@@ -67,7 +67,9 @@
               "buildTarget": "imeisa:build:production"
             },
             "development": {
-              "buildTarget": "imeisa:build:development"
+              "buildTarget": "imeisa:build:development",
+              "liveReload": true,
+              "hmr": false
             }
           },
           "defaultConfiguration": "development"
