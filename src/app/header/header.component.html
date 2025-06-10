@@ -1,0 +1,39 @@
+<div class="wrapper z-13 h-auto">
+  <div class="cont shadow-md  bg-[#ffffff] z-13 fixed w-full flex flex-col ">
+
+    <div class="flex h-[85px] justify-between items-center px-7">
+      <div>
+        <h3 class="title text-[#56ace6] z-2 relative text-3xl ">IMEISA</h3>
+      </div>
+      <!-- <button (click)="onClick()" class="hamburger hamburger--collapse relative z-2 py-0  " type="button">
+        <span class="hamburger-box  py-0  ">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button> -->
+      <nav class="text-[#8b8b8b]">
+        <div class="flex justify-end  gap-2 mb-3  ">
+          <div class="flex" >
+            <img class="w-[1rem] pr-1" src="assets/reshot-icon-phone-YUPNL5R2TW.svg" alt="phone-icon">
+            <p class="text-sm text-center" >{{phoneNumber}}</p>
+          </div>
+          <img class="w-[1.3rem]" src="assets/mexico-flag-icon.svg" alt="Mexico-flag-icon">
+        </div>
+
+        <div class="flex text-[#56ace6] text-xs font-semibold gap-5 cursor-pointer " >
+          <p>Inicio</p>
+          <p>Nosotros</p>
+          <p>Contacto</p>
+        </div>
+      </nav>
+    </div>
+
+    <div [ngClass]="{'menu-container': true, 'open': !closedMenu}" class="w-full pr-5 flex justify-end">
+      <div class=" col grid grid-cols-1 gap-y-1  z-13">
+        <p>Menu</p>
+        <p>Inicio</p>
+        <p>Nosotros</p>
+      </div>
+    </div>
+
+  </div>
+</div>

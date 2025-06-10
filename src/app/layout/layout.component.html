@@ -2,11 +2,31 @@
   <div class="overlay"></div>
 
   <div class="cont relative z-10">
-    
-    <div class="hero text-[42px] h-[550px] sm:h-[450px] lg:h-[550px] lg:px-[12rem] px-8  w-full sm:px-[4rem] flex justify-center items-center">
-      <p class="text-center text-[#ffffff] xl:hidden ">CALIDAD E INNOVACIÓN EN MAQUINARIA INDUSTRIAL</p>
-      <p class="text-center text-[#ffffff] hidden xl:block ">CALIDAD E INNOVACIÓN  <br>EN MAQUINARIA INDUSTRIAL</p>
+
+    <div
+      class="hero text-[42px] h-[550px] sm:h-[450px] lg:h-[550px] lg:px-[12rem] px-8  w-full sm:px-[4rem] flex justify-center items-center">
+      <p class="text-center text-[#ffffff] xl:hidden ">CALIDAD E INNOVACIÓN EN <span class="text-[#4db8ff]">MAQUINARIA
+          INDUSTRIAL</span></p>
+      <p class="text-center text-[#ffffff] hidden xl:block ">CALIDAD E INNOVACIÓN <br>EN MAQUINARIA INDUSTRIAL</p>
     </div>
+
+    <section class="mt-0 bg-[#ffffff] py-[15px]  ">
+
+      <div id="swiper-trademarks" class="swiper  ">
+        <div class="swiper-wrapper">
+          <!-- Swiper Slides -->
+          <div class="swiper-slide" *ngFor="let item of trademarks">
+            <img [ngSrc]="item.img" width="486" height="97" [alt]="item.title" class="swiper-img" />
+          </div>
+        </div>
+        <!-- Swiper Navigation -->
+        <div class="swiper-button-next button-img   "></div>
+        <div class="swiper-button-prev button-img"></div>
+        <!-- Swiper Pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+
+    </section>
 
     <section>
       <app-ourservices></app-ourservices>

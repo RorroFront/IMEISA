@@ -23,3 +23,20 @@
   /* height: 550px; */
   font-weight: 800;
 }
+
+.swiper-img{
+  /* aspect-ratio: 4/1; */
+  width: 230px;
+  height: 60px;
+}
+
+.swiper-button-prev, .swiper-button-next{
+
+  transform: scale(.8);
+
+}
+
+.swiper-slide{
+  display:flex;
+  justify-content: center;
+}

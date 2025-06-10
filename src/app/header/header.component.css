@@ -1,0 +1,35 @@
+.title {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* .cont{
+    height: 78px;
+} */
+
+
+.menu-container {
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    height: 150px;
+    max-height: 0;
+  }
+  
+  .menu-container.open {
+    max-height: 150px; /* ajusta según tu contenido real */
+  }
+
+
+
+
+.hamburger {
+    padding: 0;
+    padding-block-start: 20px;
+    transform: scale(.80);
+}
+
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    background-color: white;
+}
