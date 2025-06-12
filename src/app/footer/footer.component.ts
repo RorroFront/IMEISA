@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+
+  phoneNumber:string = '+52 2223375735'
+
+
 }
