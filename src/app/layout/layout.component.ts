@@ -11,6 +11,7 @@ import { Keyboard, Navigation, Pagination } from 'swiper/modules';
 
 import { isPlatformBrowser } from '@angular/common';
 import { PLATFORM_ID, Inject } from '@angular/core';
+import { TranslateModule, TranslateService, TranslateStore } from '@ngx-translate/core';
 
 Swiper.use([Navigation, Pagination, Keyboard  ]);
 
@@ -25,6 +26,7 @@ interface trademarks {
 
 @Component({
   selector: 'app-layout',
+  
   imports: [
     RouterModule,
     RouterOutlet,
@@ -33,7 +35,9 @@ interface trademarks {
     OurservicesComponent,
     UsComponent,
     ClientsComponent,
-    ContactComponent
+    ContactComponent,
+    TranslateModule
+    
 ],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.css'
@@ -47,8 +51,13 @@ export class LayoutComponent implements OnInit, AfterViewInit {
 
   trademarks: trademarks[] = [];
   
+  
 
-constructor(@Inject(PLATFORM_ID) private platformId: Object){}
+  // SE TUVO QUE HACER ASI POR QUE LIBRERIAS COMO SWIPER NO ADMITEN SSR (SERVER SIDE RENDERING)
+constructor(@Inject(PLATFORM_ID) private platformId: Object, private translate:TranslateService){
+  translate.setDefaultLang('es');  // idioma por defecto
+  translate.use('es');             // idioma inicial
+}
 
 
 ngOnInit(): void {
@@ -82,20 +91,25 @@ ngOnInit(): void {
 }
 
 
+changeLanguage(lang:string){
+  this.translate.use(lang)
+}
+
 
 
 ngAfterViewInit(): void {
 
 
+  // Utilizando platformBrowser para que el cliente renderice el Swiper, y no el servidor
   if (isPlatformBrowser(this.platformId)) {
     import('swiper').then(({ default: Swiper }) => {
       const swiper = new Swiper(`#swiper-trademarks`, {
         slidesPerView: 1,
-        loop: true, // Solo activa loop si hay más de 1 imagen
+        loop: true, 
         effect: 'fade',
         speed: 800,
         centeredSlides: true,
-        spaceBetween: 0, // <-- Aquí defines el espacio en píxeles entre slides
+        spaceBetween: 0, 
         navigation: {
           nextEl: `.swiper-button-next`,
           prevEl: `.swiper-button-prev`
