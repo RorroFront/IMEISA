@@ -1,22 +1,26 @@
-<div class="wrapper" >
-    <div class="cont bg-[#161616] w-full h-[98px] flex items-center " >
-        <footer class="flex w-full justify-evenly " >
-            <div class="grid grid-cols-[auto_auto_50px] sm:grid-cols-[auto_auto_100px] gap-4 sm:gap-[5rem] text-[#ffffff]  " >
-                <div class="text-center gap-y-1" >
-                    <h3>Informaciòn</h3>
-                    <p class="text-xs font-light" >Certificaciones</p>
-                </div>
-                <div class="text-center flex flex-col gap-y-1" >
-                    <h3>Contacto</h3>
-                    <p class="text-xs font-light" >{{phoneNumber}}</p>
-                </div>
-                <div class="text-start gap-y-1  " >
-                    <h3>Redes</h3>
-                    <div class="pl-1 flex justify-start" >
-                        <img class="text-[white] w-[20px] " src="/assets/facebook.svg" alt="">
-                    </div>
-                </div>
+<div class="wrapper">
+    <div class="cont bg-[#161616] w-full h-[98px] flex items-center">
+      <footer class="flex w-full justify-evenly">
+        <div class="grid grid-cols-[auto_auto_50px] sm:grid-cols-[auto_auto_100px] gap-4 sm:gap-[5rem] text-[#ffffff]">
+          
+          <div class="text-center gap-y-1">
+            <h3>{{ 'FOOTER.INFO_TITLE' | translate }}</h3>
+            <p class="text-xs font-light">{{ 'FOOTER.INFO_TEXT' | translate }}</p>
+          </div>
+          
+          <div class="text-center flex flex-col gap-y-1">
+            <h3>{{ 'FOOTER.CONTACT_TITLE' | translate }}</h3>
+            <p class="text-xs font-light">{{ phoneNumber }}</p>
+          </div>
+          
+          <div class="text-start gap-y-1">
+            <h3>{{ 'FOOTER.SOCIAL_TITLE' | translate }}</h3>
+            <div class="pl-1 flex justify-start">
+              <img class="text-[white] w-[20px]" src="/assets/facebook.svg" alt="">
             </div>
-        </footer>
+          </div>
+  
+        </div>
+      </footer>
     </div>
-</div>
+  </div>

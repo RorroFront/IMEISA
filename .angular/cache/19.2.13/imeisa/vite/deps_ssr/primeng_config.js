@@ -1,10 +1,10 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
   CommonModule
-} from "./chunk-7VOG54WU.js";
+} from "./chunk-YMJPF6CO.js";
 import {
   DOCUMENT
-} from "./chunk-VLVOIYBN.js";
+} from "./chunk-4HANBJMR.js";
 import {
   Component,
   Directive,

@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
+import { LanguageChangeService } from './languagechange.service';
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -11,12 +13,35 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+
+  constructor(private languageService:LanguageChangeService, 
+  private translate:TranslateService
+  ){}
+
   
-   phoneNumber:string = '+52 2223375735'
+  //*Explorar la opcion de observables+signals y usar el pipe ASYNC
+  // englishLanguage$ = toObservable(this.english);
+  // spanishLanguage$ = toObservable(this.spanish);
+  
 
-  closedMenu:boolean = true;
+  languageChange(){
+    
+    this.languageService.changeLanguage();
+    this.translate.use(this.languageService.selectedLanguage());
+    
+  };
+  
 
-  onClick(){
+
+
+
+
+  phoneNumber: string = '+52 2223375735';
+
+  closedMenu: boolean = true;
+
+
+  onClick() {
     this.closedMenu = !this.closedMenu;
 
     console.log(this.closedMenu)

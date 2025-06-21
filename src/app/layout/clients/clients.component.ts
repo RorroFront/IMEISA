@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
  interface logos {
   logo: string,
@@ -9,7 +10,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-clients',
   imports: [
-    CommonModule
+    CommonModule,
+    TranslateModule
   ],
   templateUrl: './clients.component.html',
   styleUrl: './clients.component.css'

@@ -6,7 +6,7 @@
     <!-- //MOBILE -->
     <div class="flex flex-row w-full justify-center lg:hidden ">
       <div class=" font-semibold bg-[#0e89db] basis-4/5 sm:basis-3/6 lg:basis-3/7 text-center mt-8  mb-2 py-1">
-        <h2 class="text-4xl text-[#ffffff] ">Servicios</h2>
+        <h2 class="text-4xl text-[#ffffff] "> {{'SERVICES_TITLE' | translate }} </h2>
       </div>
     </div>
 
@@ -18,11 +18,11 @@
     <div class="w-full  flex flex-row justify-center mb-8 lg:hidden ">
       <div class="flex basis-4/5 sm:basis-3/6 lg:basis-3/7  pl-10 lg:pl-8 ">
         <ul class=" list-disc text-[#ffffff] text-lg font-normal" >
-          <li>Sistemas de carga</li>
-            <li>Pailería</li>
-            <li>Maquinados</li>
-            <li>Metalmecánica</li>
-            <li>Automatización</li>
+          <li>{{ 'LOAD_SYSTEMS' | translate | lowercase  }}</li>
+            <li> {{ 'PANELWORK' | translate | lowercase  }} </li>
+            <li>{{ 'MACHINED' | translate | lowercase  }}</li>
+            <li>{{ 'METALWORKING' | translate | lowercase  }}</li>
+            <li>{{ 'AUTOMATION' | translate | lowercase  }}</li>
         </ul>
       </div>
     </div>
@@ -32,7 +32,7 @@
 
       <div class="hidden lg:grid lg:grid-col-1">
         <div class=" font-semibold bg-[#0e89db] flex justify-start text-center mt-8  mb-4 py-1">
-          <h2 class="text-4xl text-[#ffffff] ">Servicios</h2>
+          <h2 class="text-4xl text-[#ffffff] ">{{'SERVICES_TITLE' | translate }}</h2>
         </div>
 
         <div class=" flex flex-row bg-[#0e89db]  h-[220px] min-h-[220px]  justify-center mb-5 ">
@@ -45,18 +45,18 @@
         <div class=" flex flex-col mb-0 gap-6 h-[50%]   ">
           <div class="flex basis-3/7 pl-8 ">
             <ul class=" list-disc text-[#ffffff] text-lg font-normal">
-              <li>Sistemas de carga</li>
-              <li>Pailería</li>
-              <li>Maquinados</li>
-              <li>Metalmecánica</li>
-              <li>Automatización</li>
+              <li>{{ 'LOAD_SYSTEMS' | translate | lowercase  }}</li>
+              <li> {{ 'PANELWORK' | translate | lowercase  }} </li>
+              <li>{{ 'MACHINED' | translate | lowercase  }}</li>
+              <li>{{ 'METALWORKING' | translate | lowercase  }}</li>
+              <li>{{ 'AUTOMATION' | translate | lowercase  }}</li>
             </ul>
           </div>
   
           <div class=" flex  justify-center mb-[0rem]  ">
             <button (click)="viewPdf()"
               class=" bg-[#ffffff] hover:bg-[#56ace6] hover:text-[#ffffff] cursor-pointer focus:outline-2
-              focus:outline-offset-2 focus:outline-[#56ace6] active:bg-[#0e89db] p-3  rounded-xl shadow-xl/10 text-[#0e89db] scale-85 ">Ver más (PDF)</button>
+              focus:outline-offset-2 focus:outline-[#56ace6] active:bg-[#0e89db] p-3  rounded-xl shadow-xl/10 text-[#0e89db] scale-85 ">{{ "VIEW_PDF" | translate }}(PDF)</button>
           </div>
       </div>
       </div>
@@ -68,7 +68,7 @@
     <div class=" flex w-full justify-center mb-[5rem] lg:hidden ">
       <button (click)="viewPdf()"
         class="bg-[#ffffff] hover:bg-[#56ace6] hover:text-[#ffffff] cursor-pointer focus:outline-2
-      focus:outline-offset-2 focus:outline-[#56ace6] active:bg-[#0e89db] p-3 rounded-xl shadow-xl/10 text-[#0e89db] ">Ver más (PDF)</button>
+      focus:outline-offset-2 focus:outline-[#56ace6] active:bg-[#0e89db] p-3 rounded-xl shadow-xl/10 text-[#0e89db] ">{{ "VIEW_PDF" | translate }}(PDF)</button>
     </div>
 
   </div>

@@ -1,4 +1,45 @@
 {
-    "HERO": "Bienvenido a mi aplicación",
-    "HERO_COLOR": "Selecciona un idioma"
+  "HERO": "CALIDAD E INNOVACION EN",
+  "HERO_COLOR": " MAQUINARIA INDUSTRIAL",
+  "SERVICES_TITLE": "SERVICIOS",
+  "LOAD_SYSTEMS": "Sistemas de carga",
+  "PANELWORK": "Pailería",
+  "MACHINED": "Maquinados",
+  "METALWORKING": "Metalmecánica",
+  "AUTOMATION": "Automatización",
+  "VIEW_PDF": "Ver más",
+  "SERVICES_SECTION": {
+    "TITLE": "Servicios",
+    "PROFILE": {
+      "TITLE": "Perfil",
+      "DESCRIPTION": "Somos una empresa 100% mexicana, fundada en la ciudad de Puebla en 2006. Con más de 15 años de experiencia, nos especializamos en ofrecer soluciones integrales en distribución e integración de maquinaria, garantizando calidad, innovación y eficiencia para el crecimiento de tu empresa. Actualmente, estamos presentes en 18 estados, brindando cobertura y atención especializada a nuestros clientes."
+    },
+    "OBJECTIVE": {
+      "TITLE": "Objetivo",
+      "DESCRIPTION": "Ofrecer y distribuir líneas de productos nacionales e internacionales, brindando integración y servicio técnico de nuestras marcas representadas."
+    }
+  },
+  "US_SECTION": {
+    "TITLE": "Clientes"
+  },
+  "CONTACT_SECTION": {
+    "TITLE": "Contacto",
+    "AT": "En",
+    "INTRO": "nos enfocamos en la calidad y en ofrecer la mejor experiencia a nuestros clientes. Para brindarle un servicio eficiente, ponemos a su disposición nuestros canales de contacto.",
+    "FORM": {
+      "NAME_LABEL": "Nombre*",
+      "NAME_PLACEHOLDER": "Tu nombre",
+      "EMAIL_LABEL": "Correo*",
+      "EMAIL_PLACEHOLDER": "Tu email",
+      "MESSAGE_LABEL": "Mensaje*",
+      "MESSAGE_PLACEHOLDER": "Tu mensaje",
+      "SUBMIT": "Enviar"
+    }
+  },
+  "FOOTER": {
+    "INFO_TITLE": "Información",
+    "INFO_TEXT": "Certificaciones",
+    "CONTACT_TITLE": "Contacto",
+    "SOCIAL_TITLE": "Redes"
   }
+}

@@ -1,4 +1,46 @@
 {
-    "HERO": "QUALITY AND INNOVATION IN",
-    "HERO_COLOR": "INDUSTRIAL MACHINERY"
+  "HERO": "QUALITY AND INNOVATION IN",
+  "HERO_COLOR": "INDUSTRIAL MACHINERY",
+  "SERVICES_TITLE": "SERVICES",
+  "LOAD_SYSTEMS": "LOAD SYSTEMS",
+  "PANELWORK": "PANELWORK",
+  "MACHINED": "MACHINED",
+  "METALWORKING": "METALWORKING",
+  "AUTOMATION": "AUTOMATION",
+  "VIEW_PDF": "See more",
+
+  "SERVICES_SECTION": {
+    "TITLE": "Services",
+    "PROFILE": {
+      "TITLE": "Profile",
+      "DESCRIPTION": "We are a 100% Mexican company, founded in the city of Puebla in 2006. With over 15 years of experience, we specialize in providing comprehensive solutions in the distribution and integration of machinery, ensuring quality, innovation, and efficiency for the growth of your company. We are currently present in 18 states, offering coverage and specialized attention to our clients."
+    },
+    "OBJECTIVE": {
+      "TITLE": "Objective",
+      "DESCRIPTION": "To offer and distribute national and international product lines, providing integration and technical service for our represented brands."
+    }
+  },
+  "US_SECTION": {
+    "TITLE": "Clients"
+  },
+  "CONTACT_SECTION": {
+    "TITLE": "Contact",
+    "AT": "At",
+    "INTRO": "we focus on quality and delivering the best experience to our customers. To provide efficient service, we offer our contact channels",
+    "FORM": {
+      "NAME_LABEL": "Name*",
+      "NAME_PLACEHOLDER": "Your name",
+      "EMAIL_LABEL": "Email*",
+      "EMAIL_PLACEHOLDER": "Your email",
+      "MESSAGE_LABEL": "Message*",
+      "MESSAGE_PLACEHOLDER": "Your message",
+      "SUBMIT": "Send"
+    }
+  },
+  "FOOTER": {
+    "INFO_TITLE": "Information",
+    "INFO_TEXT": "Certifications",
+    "CONTACT_TITLE": "Contact",
+    "SOCIAL_TITLE": "Social "
   }
+}
