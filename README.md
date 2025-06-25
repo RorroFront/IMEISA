@@ -26,7 +26,8 @@ IMEISA/
 │   │   └── footer/
 
 
-Enrutamiento con <router-outlet> y relación con los componentes hijos
+Enrutamiento con <router-outlet> y relación con los componentes hijos:
+
 Dentro de este componente layout, el <router-outlet> actúa como un espacio dinámico donde Angular renderiza los componentes correspondientes a rutas hijas, permitiendo cambiar solo esa parte de la página según la navegación.
 Los demás componentes <app-ourservices>, <app-clients>, <app-contact> (y el comentado <app-us>) son componentes estáticos que siempre se muestran dentro del landing, ya que están directamente incluidos en la plantilla.
 
