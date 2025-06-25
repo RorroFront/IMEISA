@@ -1,7 +1,7 @@
 <div class="wrapper z-13 h-auto">
   <div class="cont shadow-md  bg-[#ffffff] z-13 fixed w-full flex flex-col ">
 
-    <div class="flex h-[85px] justify-between items-center px-7">
+    <div class="flex h-[85px] lg:h-[95px] justify-between items-center px-7">
       <div>
         <h3 class="title text-[#56ace6] z-2 relative text-3xl ">IMEISA</h3>
       </div>
@@ -13,13 +13,13 @@
       <nav class="text-[#8b8b8b]">
         <div class="flex justify-end  gap-2 mb-3  ">
           <div class="flex" >
-            <img class="w-[1rem] pr-1" src="assets/reshot-icon-phone-YUPNL5R2TW.svg" alt="phone-icon">
-            <p class="text-sm text-center" >{{phoneNumber}}</p>
+            <img class="w-[1rem] lg:w-[1.5rem] pr-1" src="assets/reshot-icon-phone-YUPNL5R2TW.svg" alt="phone-icon">
+            <p class="text-sm text-center lg:text-base " >{{phoneNumber}}</p>
           </div>
-          <img (click)="languageChange()"  class="w-[1.3rem] cursor-pointer" src="assets/mexico-flag-icon.svg" alt="Mexico-flag-icon">
+          <img (click)="languageChange()"  class="w-[1.3rem] h-[1.3rem] lg:w-[1.5rem] lg:h-[1.5rem] cursor-pointer" [src]="flagIcon(spanishFlag)" alt="Mexico-flag-icon">
         </div>
 
-        <div class="flex text-[#56ace6] text-xs font-semibold gap-5 cursor-pointer " >
+        <div class="flex text-[#56ace6] text-xs font-semibold gap-5 cursor-pointer lg:text-xl " >
           <p>Inicio</p>
           <p>Nosotros</p>
           <p>Contacto</p>

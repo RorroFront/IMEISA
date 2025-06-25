@@ -14,15 +14,26 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HeaderComponent {
 
+  spanishFlag:string = 'assets/mexico-flag-icon.svg';
+  englishFlag:string = 'assets/usa-flag-icon.svg';
+
   constructor(private languageService:LanguageChangeService, 
   private translate:TranslateService
-  ){}
+  ){};
 
   
   //*Explorar la opcion de observables+signals y usar el pipe ASYNC
   // englishLanguage$ = toObservable(this.english);
   // spanishLanguage$ = toObservable(this.spanish);
   
+
+  flagIcon(flag:string){
+    if(this.languageService.selectedLanguage() === 'es'){
+      return flag = this.spanishFlag;
+    }else{
+      return flag = this.englishFlag;
+    }
+  }
 
   languageChange(){
     
@@ -31,6 +42,7 @@ export class HeaderComponent {
     
   };
   
+
 
 
 
@@ -45,6 +57,6 @@ export class HeaderComponent {
     this.closedMenu = !this.closedMenu;
 
     console.log(this.closedMenu)
-  }
+  };
 
 }

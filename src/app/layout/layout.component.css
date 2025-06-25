@@ -24,11 +24,9 @@
   font-weight: 800;
 }
 
-.swiper-img{
-  /* aspect-ratio: 4/1; */
-  width: 230px;
-  height: 60px;
-}
+/* .swiper-imgdesktop{
+  aspect-ratio: 1.33;
+} */
 
 .swiper-button-prev, .swiper-button-next{
 

@@ -1,9 +1,9 @@
 import {
   CommonModule
-} from "./chunk-QUIVS6JR.js";
+} from "./chunk-BF6HTCJL.js";
 import {
   DOCUMENT
-} from "./chunk-B7LFUU4U.js";
+} from "./chunk-RK5MPTVZ.js";
 import {
   Component,
   Directive,
@@ -12,6 +12,7 @@ import {
   Input,
   NgModule,
   PLATFORM_ID,
+  Subject,
   TemplateRef,
   effect,
   inject,
@@ -29,10 +30,7 @@ import {
   ɵɵgetInheritedFactory,
   ɵɵprojection,
   ɵɵprojectionDef
-} from "./chunk-DNEWGQFJ.js";
-import {
-  Subject
-} from "./chunk-P6U2JBMQ.js";
+} from "./chunk-TVJI6KG5.js";
 import {
   __spreadValues
 } from "./chunk-WDMUDEB6.js";

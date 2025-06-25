@@ -2,26 +2,26 @@
   <div class="overlay"></div>
 
   <div class="cont relative z-10">
-   
 
-     <div
-      class="hero text-[42px] h-[550px] sm:h-[450px] lg:h-[550px] lg:px-[12rem] px-8  w-full sm:px-[4rem] flex justify-center items-center">
-      <p class="text-center text-[#ffffff] xl:hidden "  >{{'HERO' | translate}} <span class="text-[#4db8ff]"> 
+
+    <div
+      class="hero text-[42px] lg:text-[50px] h-[550px] sm:h-[450px] lg:h-[550px] lg:px-[10rem] px-8  w-full sm:px-[4rem] flex justify-center items-center">
+      <p class="text-center text-[#ffffff] xl:hidden ">{{'HERO' | translate}} <span class="text-[#4db8ff]">
           {{'HERO_COLOR' | translate}}</span></p>
-      <p class="text-center text-[#ffffff] hidden xl:block ">{{'HERO_COLOR' | translate}} <br>EN MAQUINARIA INDUSTRIAL</p>
-      <!-- <div class="relative z-50" >
-        <button class="cursor-pointer" (click)="changeLanguage('en')" >INGLES</button>
-        <button class="cursor-pointer" (click)="changeLanguage('es')" >ESPAÑOL</button>
-      </div> -->
+      <p class="text-center text-[#ffffff] hidden  xl:block ">{{'HERO' | translate}} <br> <span
+          class="text-[#4db8ff]">{{'HERO_COLOR' | translate}}</span> </p>
+
     </div>
 
-    <section class="mt-0 bg-[#ffffff] py-[15px]  ">
 
-      <div id="swiper-trademarks" class="swiper  ">
+    <!-- *MOBILE-TABLET -->
+    <section class="mt-0 bg-[#ffffff] py-[15px] lg:hidden block ">
+      <div id="swiper-trademarksmobile" class="swiper  ">
         <div class="swiper-wrapper">
           <!-- Swiper Slides -->
           <div class="swiper-slide" *ngFor="let item of trademarks">
-            <img [ngSrc]="item.img" width="486" height="97" [alt]="item.title" class="swiper-img" />
+            <img [src]="item.img"  [alt]="item.title"
+              class="swiper-img w-[230px] h-[60px]  xl:h-[90px] xl:w-[345px] " />
           </div>
         </div>
         <!-- Swiper Navigation -->
@@ -30,15 +30,34 @@
         <!-- Swiper Pagination -->
         <!-- <div class="swiper-pagination"></div> -->
       </div>
+    </section>
 
-    </section> 
+    <!-- *DESKTOP -->
+    <section class="mt-0 bg-[#ffffff] py-[15px] hidden lg:block ">
+      <div id="swiper-trademarksdesktop" class="swiper  ">
+        <div class="swiper-wrapper">
+          <!-- Swiper Slides -->
+          <div class="swiper-slide " *ngFor="let item of trademarks">
+            <img [src]="item.img"  [alt]="item.title"
+            class="swiper-imgdesktop w-[230px] h-[60px] xl:w-[350px] xl:h-[90px] " />
+          </div>
+        </div>
+        <!-- Swiper Navigation -->
+        <div class="swiper-button-next button-img   "></div>
+        <div class="swiper-button-prev button-img"></div>
+        <!-- Swiper Pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+    </section>
+
+
 
     <section>
       <app-ourservices></app-ourservices>
     </section>
-    <section>
+    <!-- <section>
       <app-us></app-us>
-    </section>
+    </section> -->
     <section>
       <app-clients></app-clients>
     </section>

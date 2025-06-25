@@ -103,7 +103,7 @@ ngAfterViewInit(): void {
   // Utilizando platformBrowser para que el cliente renderice el Swiper, y no el servidor
   if (isPlatformBrowser(this.platformId)) {
     import('swiper').then(({ default: Swiper }) => {
-      const swiper = new Swiper(`#swiper-trademarks`, {
+      const swiper = new Swiper(`#swiper-trademarksmobile`, {
         slidesPerView: 1,
         loop: true, 
         effect: 'fade',
@@ -123,22 +123,31 @@ ngAfterViewInit(): void {
     });
   }
 
+  // SWIPER-DESKTOP
+  if (isPlatformBrowser(this.platformId)) {
+    import('swiper').then(({ default: Swiper }) => {
+      const swiper = new Swiper(`#swiper-trademarksdesktop`, {
+        slidesPerView: 4,
+        loop: false, 
+        effect: 'fade',
+        speed: 800,
+        centeredSlides: false,
+        spaceBetween: 4, 
+        navigation: {
+          nextEl: `.swiper-button-next`,
+          prevEl: `.swiper-button-prev`
+        },
+        pagination: {
+          el: `.swiper-pagination`,
+          clickable: true
+        },
+        autoplay: false
+      });
+    });
+  }
 
-  // new Swiper(`#swiper-trademarks`, {
-  //   slidesPerView: 2,
-  //   loop: true, // Solo activa loop si hay más de 1 imagen
-  //   effect: 'fade',
-  //   speed: 800,
-  //   navigation: {
-  //     nextEl: `.swiper-button-next`,
-  //     prevEl: `.swiper-button-prev`
-  //   },
-  //   pagination: {
-  //     el: `.swiper-pagination`,
-  //     clickable: true
-  //   },
-  //   autoplay: false
-  // });
+
+
 
   
 }
