@@ -6,24 +6,8 @@ Página web para IMEISA
 --ESTRUCTURA DEL PROYECTO--
 
 
-IMEISA/
-├── public/
-│   ├── favicon/
-│   ├── assets/
-│   │   ├── machinery-logos/
-│   │   ├── i18n/
-│   │   ├── PDF/
-│   │   └── logos/
-│
-├── src/
-│   ├── app/
-│   │   ├── layout/
-│   │   │   ├── contact/
-│   │   │   ├── us/
-│   │   │   ├── ourservices/
-│   │   │   └── clients/
-│   │   ├── header/
-│   │   └── footer/
+
+![Imagen1](https://github.com/user-attachments/assets/a63ceb88-352b-4d52-a65a-5b03f1e33df7)
 
 
 Enrutamiento con <router-outlet> y relación con los componentes hijos:
