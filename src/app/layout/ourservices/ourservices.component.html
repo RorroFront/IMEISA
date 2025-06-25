@@ -1,3 +1,75 @@
-  <p>
-    hola mundo
-  </p>
+<div class="wrapper">
+  <div class="cont w-full h-auto bg-[#0e89db] z-1 relative grid grid-cols-1 gap-3 items-center ">
+
+
+
+    <!-- *MOBILE -->
+    <div class="flex flex-row w-full justify-center lg:hidden ">
+      <div class=" font-semibold bg-[#0e89db] basis-4/5 sm:basis-3/6 lg:basis-3/7 text-center mt-8  mb-2 py-1">
+        <h2 class="text-4xl  text-[#ffffff] "> {{'SERVICES_TITLE' | translate }} </h2>
+      </div>
+    </div>
+
+    <div class="bg-[#0e89db]  h-[315px] lg:min-h-[450px] xl:min-h-[600px] flex flex-row justify-center mb-5 lg:hidden ">
+      <img class=" shadow-xl/30  aspect-2/4 object-cover h-full basis-4/5 sm:basis-3/6 lg:basis-3/7  rounded-xl "
+        src="/assets/background.png" alt="fondo-imeisa">
+    </div>
+
+    <div class="w-full  flex flex-row justify-center mb-8 lg:hidden ">
+      <div class="flex basis-4/5 sm:basis-3/6 lg:basis-3/7  pl-10 lg:pl-8 ">
+        <ul class=" list-disc text-[#ffffff] text-lg font-normal" >
+          <li>{{ 'LOAD_SYSTEMS' | translate | lowercase  }}</li>
+            <li> {{ 'PANELWORK' | translate | lowercase  }} </li>
+            <li>{{ 'MACHINED' | translate | lowercase  }}</li>
+            <li>{{ 'METALWORKING' | translate | lowercase  }}</li>
+            <li>{{ 'AUTOMATION' | translate | lowercase  }}</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- //DESKTOP -->
+    <div class="hidden lg:flex justify-center h-auto gap-5 mb-[8rem] mt-[5rem]" >
+
+      <div class="hidden lg:grid lg:grid-col-1">
+        <div class=" font-semibold bg-[#0e89db] flex justify-start text-center mt-8  mb-[3rem] py-1">
+          <h2 class="text-5xl text-[#ffffff] ">{{'SERVICES_TITLE' | translate }}</h2>
+        </div>
+
+        <div class=" flex flex-row bg-[#0e89db]  h-[400px] min-h-[250px]  justify-center mb-5 ">
+          <img class=" shadow-xl/30  aspect-4/2 object-cover h-full basis-2/7  rounded-xl " src="/assets/background.png"
+            alt="fondo-imeisa">
+        </div>
+      </div>
+
+      <div class=" flex flex-col justify-center">
+        <div class=" flex flex-col mb-0 gap-6 h-[50%]   ">
+          <div class="flex basis-3/7 pl-8 ">
+            <ul class=" list-disc text-[#ffffff] text-lg font-normal">
+              <li>{{ 'LOAD_SYSTEMS' | translate | lowercase  }}</li>
+              <li> {{ 'PANELWORK' | translate | lowercase  }} </li>
+              <li>{{ 'MACHINED' | translate | lowercase  }}</li>
+              <li>{{ 'METALWORKING' | translate | lowercase  }}</li>
+              <li>{{ 'AUTOMATION' | translate | lowercase  }}</li>
+            </ul>
+          </div>
+  
+          <div class=" flex  justify-center mb-[0rem]  ">
+            <button (click)="viewPdf()"
+              class=" bg-[#ffffff] hover:bg-[#56ace6] hover:text-[#ffffff] cursor-pointer focus:outline-2
+              focus:outline-offset-2 focus:outline-[#56ace6] active:bg-[#0e89db] p-3  rounded-xl shadow-xl/10 text-[#0e89db] scale-85 ">{{ "VIEW_PDF" | translate }}(PDF)</button>
+          </div>
+      </div>
+      </div>
+
+    </div>
+
+
+
+    <div class=" flex w-full justify-center mb-[5rem] lg:hidden ">
+      <button (click)="viewPdf()"
+        class="bg-[#ffffff] hover:bg-[#56ace6] hover:text-[#ffffff] cursor-pointer focus:outline-2
+      focus:outline-offset-2 focus:outline-[#56ace6] active:bg-[#0e89db] p-3 rounded-xl shadow-xl/10 text-[#0e89db] ">{{ "VIEW_PDF" | translate }}(PDF)</button>
+    </div>
+
+  </div>
+</div>

@@ -1,7 +1,9 @@
 import {
-  CommonModule,
+  CommonModule
+} from "./chunk-BF6HTCJL.js";
+import {
   DOCUMENT
-} from "./chunk-XFJQ2FHO.js";
+} from "./chunk-RK5MPTVZ.js";
 import {
   Component,
   Directive,
@@ -28,7 +30,7 @@ import {
   ɵɵgetInheritedFactory,
   ɵɵprojection,
   ɵɵprojectionDef
-} from "./chunk-IMAZOHYS.js";
+} from "./chunk-TVJI6KG5.js";
 import {
   __spreadValues
 } from "./chunk-WDMUDEB6.js";

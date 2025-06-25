@@ -1,8 +1,10 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
-  CommonModule,
+  CommonModule
+} from "./chunk-YMJPF6CO.js";
+import {
   DOCUMENT
-} from "./chunk-7NTY7Q5C.js";
+} from "./chunk-4HANBJMR.js";
 import {
   Component,
   Directive,
@@ -16,7 +18,6 @@ import {
   inject,
   makeEnvironmentProviders,
   provideAppInitializer,
-  require_cjs,
   setClassMetadata,
   signal,
   untracked,
@@ -29,7 +30,10 @@ import {
   ɵɵgetInheritedFactory,
   ɵɵprojection,
   ɵɵprojectionDef
-} from "./chunk-M5ZY6E77.js";
+} from "./chunk-T7X4ZVQL.js";
+import {
+  require_cjs
+} from "./chunk-AQYIT73X.js";
 import {
   __spreadValues,
   __toESM

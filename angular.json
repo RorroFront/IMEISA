@@ -7,6 +7,9 @@
       "projectType": "application",
       "schematics": {},
       "root": "",
+      "i18n": {
+        "sourceLocale":"es-MX"
+      },
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
@@ -17,7 +20,8 @@
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
-              "zone.js"
+              "zone.js",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -27,7 +31,9 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/swiper/swiper-bundle.css",
+              "src/hamburgers.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -67,7 +73,9 @@
               "buildTarget": "imeisa:build:production"
             },
             "development": {
-              "buildTarget": "imeisa:build:development"
+              "buildTarget": "imeisa:build:development",
+              "liveReload": true,
+              "hmr": false
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +88,8 @@
           "options": {
             "polyfills": [
               "zone.js",
-              "zone.js/testing"
+              "zone.js/testing",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
@@ -90,12 +99,18 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/swiper/swiper-bundle.css",
+              "src/hamburgers.css"
+
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "215dd519-3b38-45f3-8b91-d9189c0f3c1b"
   }
 }
