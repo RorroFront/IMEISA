@@ -5,6 +5,7 @@ Página web para IMEISA
 
 --ESTRUCTURA DEL PROYECTO--
 
+
 IMEISA/
 ├── public/
 │   ├── favicon/
